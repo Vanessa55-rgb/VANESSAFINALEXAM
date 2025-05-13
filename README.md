@@ -1,18 +1,17 @@
 # vanessaFinalExam
 
-Este es un programa en Python para administrar el inventario de una tienda. Puedes agregar, consultar, actualizar, eliminar productos y calcular el valor total del inventario.
+This is a program in Python to manage the inventory of a store. You can add, view, update, remove products and calculate the total inventory value.
 
- Requisitos
-Tener instalado Python 3
+Requirements
+Have Python 3 installed
 
-Cómo usar
-Descarga el archivo Pruebavanessagomez.py
-descomprimirlo
-despues de tener el archivo descomprimido abrir en tu editor de codigo preferido
-elegir el archivo del codigo propuesto y inicializar haciendo un debug en la terminal dedicada 
-correr programa
+How to use 
+1.Download the file Prufavanessagomez.py 
+2.Unzip it 
+3.After having the uncompressed file open in your preferred code editor 
+4.Choose the proposed code file and initialize by debugging in the dedicated terminal running program
 
-ejemplos de salida y entrada de datos serian los siguientes:
+Examples of data output and input would be the following:
 
     while True:
     # menu inventary
