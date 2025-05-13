@@ -1,4 +1,4 @@
-# vanessaFinalExam
+# VANESSAFINALEXAM
 
 This is a program in Python to manage the inventory of a store. You can add, view, update, remove products and calculate the total inventory value.
 
