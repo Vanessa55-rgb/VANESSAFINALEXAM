@@ -34,7 +34,7 @@ Examples of data output and input would be the following:
                 stock = int(input("stock product: "))
                 if price < 0 or stock < 0:
                     raise ValueError
-                inventary[name] = (price, stock)
+                inventary[name] = {'price': price, 'stock': stock}
                 print(f"product '{name}' correct")
             except ValueError:
                 print(f"mistake")
@@ -43,7 +43,7 @@ Examples of data output and input would be the following:
     elif option == '2':
         name = input(" name product consult: ").strip()
         if name in inventary:
-            price, stock= inventary[name]
+            price, stock = inventary[name]
             print(f"product found: ")
             print(f"name: {name}")
             print(f"price: ${inventary[name]['price']}")
@@ -60,7 +60,7 @@ Examples of data output and input would be the following:
                 new_price = float(input("new price: "))
                 if new_price < 0:
                     raise ValueError
-                inventary[name] = (new_price)
+                inventary[name]['price'] = (new_price)
                 print("price updated correct")
             except ValueError:
                 print("price incorrect")
@@ -77,7 +77,7 @@ Examples of data output and input would be the following:
             print("product incorrect")
     # option 5: calculate total value calculate
     elif option == '5':
-        total = sum(map(lambda item: item['price'] * item['price'], inventary.values()))
+        total = sum(map(lambda item: item['price'] * item['stock'], inventary.values()))
         print(f"worth total value inventary: ${round(total, 2)}")
 
     # option 6: go out
